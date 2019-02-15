@@ -1,5 +1,5 @@
 .card {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), asset-url('mojito.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path @article.photo, height: 300, width: 400, crop: :fill %>');
   height: 60vh;
   background-size: cover;
   background-repeat: no-repeat;
