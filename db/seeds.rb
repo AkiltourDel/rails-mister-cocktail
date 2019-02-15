@@ -5,6 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Cocktail.destroy_all
+Ingredient.destroy_all
+
 Ingredient.create(name: "Lemon")
 Ingredient.create(name: "Ice")
 Ingredient.create(name: "Mint leaves")
@@ -16,4 +19,20 @@ Ingredient.create(name: "Water")
 Ingredient.create(name: "Orange juice")
 Ingredient.create(name: "Sugar")
 Ingredient.create(name: "Fruits")
-Cocktail.create(name:"Cocktail du p'tit bonhomme")
+Ingredient.create(name: "Milk")
+Ingredient.create(name: "Straweberry")
+Ingredient.create(name: "Wine")
+Ingredient.create(name: "Sherry")
+Ingredient.create(name: "Gin")
+Ingredient.create(name: "Pineapple")
+Ingredient.create(name: "Coconuts")
+
+
+
+url = "https://images.pexels.com/photos/989711/pexels-photo-989711.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+cocktail = Cocktail.new(name: "Spritz")
+
+cocktail.remote_photo_url = url
+
+
+cocktail.save
