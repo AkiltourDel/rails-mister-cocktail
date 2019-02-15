@@ -1,2 +1,40 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<div class="container">
+
+  <div class="row ">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-1">
+      <div class="card card-product">
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-sm-offset-1">
+       <h1><%= @cocktail.name %></h1>
+    </div>
+
+    <div class="col-xs-6 col-sm-5 col-sm-offset-1">
+      <h3>Ingredients</h3>
+      <p><%= @cocktail.name %></p>
+    </div>
+
+    <div class="col-xs-6 col-sm-5 col-sm-offset-1">
+      <h4>Description</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid modi ex enim nemo animi dolores quaerat, expedita aperiam hic, vel autem tempora magnam explicabo odit neque ab deserunt quod ratione.</p>
+    </div>
+
+    <div class="col-xs-6 col-sm-5 col-sm-offset-1">
+      <h4>Rating :</h4>
+      <p> X X X X</p>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <h3>Add a Rating</h3>
+
+    <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.button :submit %>
+    <% end %>
+
+  </div>
+
+</div>
